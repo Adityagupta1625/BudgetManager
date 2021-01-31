@@ -181,5 +181,5 @@ calculate.addEventListener("click",function(){
         }
         
     });
-    message.innerHTML=`<p>Your Budget for the period is as follow-<br>expenses are-${total_expense}<br>income is-${total_income}<br>undefined is-${total_undefined}</p>`
+    message.innerHTML=`<p>Your Budget for the period is as follow-<br>expenses are-${total_income}<br>income is-${total_expense}<br>undefined is-${total_undefined}</p>`
 });
