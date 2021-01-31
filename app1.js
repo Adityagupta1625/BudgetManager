@@ -167,7 +167,7 @@ calculate.addEventListener("click",function(){
     let message=document.getElementById("message");
     valuesobj.forEach(function(element) {
         let name=element.Category;
-        name.toLowerCase();
+       
         let x=parseInt(element.Amount);
         if (name.localeCompare("expense")){
             total_expense+=x;
