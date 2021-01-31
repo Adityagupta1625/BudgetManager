@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Expense site</title>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Budget</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            
+        </div>
+    </nav>
+    <div class="imp">
+
+
+        <div id="main">
+            <h2>Welcome to My Budget </h2>
+            <!-- <p id="info"> For information go here-<a href="introduction.html">Information</a></p> -->
+        </div>
+        <div class="container my-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Add a New Transaction</h5>
+                    <div class="form-group">
+                        <input type="title" class="form-control my-3" id="title"
+                            placeholder="Enter the title for Transaction">
+                        <input type="Date" class="form-control my-3" id="date" placeholder="Enter the Date">
+                        <input type="Amount" class="form-control my-3" id="amount" placeholder="Enter the Amount">
+                        <input type="Amount" class="form-control my-3" id="check" placeholder="Enter the category(expense/income)">
+                       
+                       
+                    <button class="btn btn-primary" id="add">Add </button>
+                </div>
+                </div>
+            </div>
+            <button class="btn btn-primary mx-3" id="show" onclick="showValues()">Show </button>
+            <button class="btn btn-primary mx-3" id="print">Print </button>
+        </div>
+        <div id="nothing">
+        </div>
+        <div id="table">
+        <table id="Myval" class="container">
+        <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Date</th>
+                    <th >Title</th>
+                    <th>Category(expense/income)</th>
+                    <th>Amount</th>
+                    <th>Delete Row</th>
+                </tr>
+        <thead>
+        <tbody id="see">
+
+        </tbody>
+        </table>
+            <div id="message">
+                                </div>
+            <div id="cal">
+            <button class= "btn btn-primary mx-3 my-2" id="calculate"> Calculate Expense </button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="app1.js"></script>
+</body>
+
+</html>
